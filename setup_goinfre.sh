@@ -13,6 +13,7 @@ log()  { echo -e "${GREEN}[OK]${NC} $1"; }
 warn() { echo -e "${YELLOW}[--]${NC} $1"; }
 
 # --- 1. Créer les dossiers dans goinfre ---
+rm -f "$GOINFRE/.vscode/extensions"
 mkdir -p "$GOINFRE/.vscode/extensions"
 mkdir -p "$GOINFRE/.config/Code"
 mkdir -p "$GOINFRE/.var"
